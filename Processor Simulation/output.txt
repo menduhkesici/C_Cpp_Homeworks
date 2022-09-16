@@ -1,0 +1,36 @@
+t=0 P1 arrives
+
+t=10 P2 arrives
+P1 pushed on S with runTime 40
+P2 preempted the CPU
+
+t=20 P3 arrives
+P3 pushed on Q3
+
+t=30 P4 arrives
+P2 pushed on S with runTime 50
+P4 preempted the CPU
+
+t=40 P4 finished
+P2 popped from S
+
+t=50 P5 arrives
+P5 pushed on Q2
+
+t=60 P6 arrives
+P2 pushed on S with runTime 30
+P6 preempted the CPU
+
+t=70 P6 finished
+P2 popped from S
+
+t=100 P2 finished
+P5 popped from Q2
+
+t=130 P5 finished
+P1 popped from S
+
+t=170 P1 finished
+P3 popped from Q3
+
+t=200 P3 finished
